@@ -20,5 +20,19 @@ To successfully complete this assignment, you must fulfill the following require
 
 * Create an event handler that will accept user input through the provided form and turn that input into a request to the [Flickr API](https://www.flickr.com/services/api/).
 * Display the images returned from the Flickr API as a grid on the page (or in a suitably appealing arrangement that matches your creative ambition).
-* Allow users to click to view the image larger in a modal window.
-* When users re-do the search, the
+* Allow users to click to view the image larger in a modal window. The larger display should show the following info:
+    * title
+    * date_taken
+    * description
+    * author
+    * link back to the Flickr page for this image
+* When users re-do the search, the previous images should be removed, and the new images should fill the same space.
+
+## Stretch Requirements
+
+There are many ways you can stretch this assignment:
+
+* Add additional visual styling to make everything look a lot prettier.
+* Ditch the top navbar, since it's not really useful. Can you make a cooler search form show up on the screen?
+* Use some kind of animation or special effects library to provide a cool effect when the user mouses over the grid of images.
+* Provide error handling so that if somebody submits a blank term, no search is performed (and the user receives a message letting them know what went wrong).
