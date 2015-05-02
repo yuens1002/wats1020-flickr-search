@@ -1,6 +1,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* Enable these styles if you wish to go into a grid layout.
+
 ul#images {
     list-style-type: none;
 }
@@ -22,6 +25,8 @@ ul#images li img {
 ul#images li button {
     display: inline-block;
 }
+
+--- End of grid layout styles. */
 
 ul#images .placeholder {
     font-size: 2em;
