@@ -20,7 +20,7 @@ To successfully complete this assignment, you must fulfill the following require
 
 * Create an event handler that will accept user input through the provided form and turn that input into a request to the [Flickr API](https://www.flickr.com/services/api/).
 * Display the images returned from the Flickr API as a grid on the page (or in a suitably appealing arrangement that matches your creative ambition).
-* Allow users to click to view the image larger in a modal window. The larger display should show the following info:
+* Display the following info around the images your script finds:
     * title
     * date_taken
     * description
@@ -32,6 +32,7 @@ To successfully complete this assignment, you must fulfill the following require
 
 There are many ways you can stretch this assignment:
 
+* Make the details show up in a modal window, using the Bootstrap technique for making one modal window serve multiple buttons: [Varying Modal Content Based on Trigger Button](http://getbootstrap.com/javascript/#modals-related-target).
 * Add additional visual styling to make everything look a lot prettier.
 * Ditch the top navbar, since it's not really useful. Can you make a cooler search form show up on the screen?
 * Use some kind of animation or special effects library to provide a cool effect when the user mouses over the grid of images.
