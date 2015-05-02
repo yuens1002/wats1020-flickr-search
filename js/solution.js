@@ -8,8 +8,6 @@
 // they do not support nearly all of the features of the full API. With an API
 // Key and using a more complex approach, you can write apps that allow nearly
 // all of the functions Flickr offers.
-//
-// For the purposes of this assignment, this is a legitimate solution.
 $(document).on('ready', function(){
   var searchImages = function(tags) {
     var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
@@ -28,11 +26,19 @@ $(document).on('ready', function(){
           'src': item.media.m,
           'alt': item.title
         }).appendTo(newListItem);
+        // If you're not doing the modal, then show info about the image.
+        var newTitle = $('<p class="image-title">').html(item.title).appendTo(newListItem);
+        var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
+        var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
+
+
+        // Button only needed if you're doing the modal
         var newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
           'data-title': item.title,
           'data-toggle': "modal",
           'data-target': "#infoModal",
           'data-imgsrc': item.media.m,
+          'data-description': item.description,
           'type': "button"
         }).appendTo(newListItem);
         newListItem.appendTo( "#images" );
@@ -54,16 +60,18 @@ $(document).on('ready', function(){
     var button = $(event.relatedTarget); // Button that triggered the modal
     var title = button.data('title'); // Extract info from data-* attributes
     var imgSrc = button.data('imgsrc');
+    var imageDescription = button.data('description');
 
     // Update the modal's content. We'll use jQuery here.
     var modal = $(this);
-    modal.find('.modal-title').text(title);
+    modal.find('.modal-title').html(title);
     var modalBody = modal.find('.modal-body');
     modalBody.empty();
     var modalImage = $("<img>").attr({
       'src': imgSrc,
       'alt': title
     }).appendTo(modalBody);
+    var modalDescription = $("<p class='image-description'>").html(imageDescription).appendTo(modalBody);
   });
 
 });

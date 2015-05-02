@@ -3,11 +3,6 @@
    ========================================================================== */
 
 /* Enable these styles if you wish to go into a grid layout.
-
-ul#images {
-    list-style-type: none;
-}
-
 ul#images li {
     width: 120px;
     height: auto;
@@ -27,6 +22,10 @@ ul#images li button {
 }
 
 --- End of grid layout styles. */
+
+ul#images {
+    list-style-type: none;
+}
 
 ul#images .placeholder {
     font-size: 2em;
