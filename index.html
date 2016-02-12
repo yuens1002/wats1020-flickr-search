@@ -10,17 +10,9 @@
         <meta name="description" content="Demo of searching via Flickr API using AJAX.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -49,19 +41,57 @@
       </div>
     </nav>
 
-    <div class="container">
-      <h1 class="search-title">Flickr Search</h1>
-      <ul id="images">
-        <!-- TODO: Replace the content in this area with a grid of images based on the results of the search. -->
-        <li class="placeholder">Search for images using the search bar above!</li>
-      </ul>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Jane Student 2015</p>
+		
+	  
+   
+		<div class="container">
+				<div class="col-xs-12">
+					<h1 class="text-center lead text-capitalize">showing Flickr keyword search for - <i>Seattle</i></h1>
+				</div>
+		</div>
+		<div class="container-fluid">
+				<div class="grid" id="images"></div>	
+		</div>		
+		<!--
+		<div class="container-fluid">  
+		<div class="grid">
+			<div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
+			<div class="grid-item col-xs-12">
+			  
+			  	<div class="grid-item-content search-title"><h1 class="text-center lead text-capitalize">showing Flickr keyword search for - <i>Seattle</i></h1>
+				</div>
+			</div>	
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			  
+			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/bwy74ok.jpg"></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+				<div class="grid-item-content danger"><p class="text-uppercase">Photo Title (5 words or less)</p><img class="img-responsive" src="http://i.imgur.com/bAZWoqx.jpg"><p>Unloaded images can throw off Masonry layouts and cause item elements to overlap. imagesLoaded resolves this issue. Initialize Masonry, then trigger layout after each image loads</p><p>Date Taken: 10/02/1975</p></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/PgmEBSB.jpg"></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/aboaFoB.jpg"></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/UORFJ3w.jpg"></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/q9zO6tw.jpg"></div>
+			</div>
+			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
+			<div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/hODreXI.jpg"></div>
+			</div>
+		  </div>
+		</div>	
+		  -->
+    
+		<hr>
+      <footer class="container">
+        <center>WASTS 1020 Flickr Search Assignment - Sunny Yuen 2016</center>
       </footer>
-    </div> <!-- /container -->
+    
 
     <!-- Modal Window used for displaying content-->
     <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
@@ -81,11 +111,11 @@
       </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>	
     <script src="js/vendor/bootstrap.min.js"></script>
-
     <script src="js/main.js"></script>
 
     </body>
