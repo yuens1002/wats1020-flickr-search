@@ -19,78 +19,26 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Flickr Search</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Type keywords here." class="form-control" name="searchText">
-            </div>
-            <button type="submit" class="btn btn-primary search" name="searchButton">Search</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-		
-	  
-   
-		<div class="container">
-				<div class="col-xs-12">
-					<h1 class="text-center lead text-capitalize">showing Flickr keyword search for - <i>Seattle</i></h1>
-				</div>
-		</div>
-		<div class="container-fluid">
-				<div class="grid" id="images"></div>	
-		</div>		
-		<!--
-		<div class="container-fluid">  
-		<div class="grid">
-			<div class="grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
-			<div class="grid-item col-xs-12">
-			  
-			  	<div class="grid-item-content search-title"><h1 class="text-center lead text-capitalize">showing Flickr keyword search for - <i>Seattle</i></h1>
-				</div>
+			<div class="jumbotron container-fluid text-center">
+				<h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Flickr Search</h1>
+				
+					<div class="col-md-12">
+						<div class="input-group  input-group-lg">
+					       <input type="text" placeholder="Type Keyword(s) Here To Search" class="form-control" name="searchText">
+					       <span class="input-group-btn">
+					  	     <button type="button" class="btn btn-default search">GO!</button>
+					       </span>
+						</div>		
+					</div>
+				
 			</div>	
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			  
-			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/bwy74ok.jpg"></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-				<div class="grid-item-content danger"><p class="text-uppercase">Photo Title (5 words or less)</p><img class="img-responsive" src="http://i.imgur.com/bAZWoqx.jpg"><p>Unloaded images can throw off Masonry layouts and cause item elements to overlap. imagesLoaded resolves this issue. Initialize Masonry, then trigger layout after each image loads</p><p>Date Taken: 10/02/1975</p></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/PgmEBSB.jpg"></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/aboaFoB.jpg"></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/UORFJ3w.jpg"></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			  <div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/q9zO6tw.jpg"></div>
-			</div>
-			<div class="grid-item col-xs-12 col-sm-6 col-md-4">
-			<div class="grid-item-content"><img class="img-responsive" src="http://i.imgur.com/hODreXI.jpg"></div>
-			</div>
-		  </div>
-		</div>	
-		  -->
-    
+	<div id="images" class="container-fluid"></div>		
+		
 		<hr>
-      <footer class="container">
-        <center>WASTS 1020 Flickr Search Assignment - Sunny Yuen 2016</center>
-      </footer>
+   <footer class="container">
+	  
+	<center>WASTS 1020 Flickr Search Assignment - Sunny Yuen, Winter 2016</center>
+    </footer>
     
 
     <!-- Modal Window used for displaying content-->

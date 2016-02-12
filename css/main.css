@@ -1,7 +1,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html { overflow-y: scroll; }
 
 ul#images li {
     width: 120px;
@@ -24,10 +24,21 @@ ul#images li button {
 
 
 body {
-	padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
+.jumbotron {
+	padding-left: 15rem;
+	padding-right: 15rem;
+	padding-bottom: 10rem;
+}
+
+
+.lead {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+}
 
 ul#images {
     list-style-type: none;
