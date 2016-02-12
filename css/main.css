@@ -3,6 +3,11 @@
    ========================================================================== */
 html { overflow-y: scroll; }
 
+.grey {
+	background: #DDD;
+	padding: 1rem
+}
+
 ul#images li {
     width: 120px;
     height: auto;
