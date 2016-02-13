@@ -7,7 +7,7 @@
 html { overflow-y: scroll; }
 
 .grey {
-	background: #DDD;
+	background: #eee;
 	padding: 1rem;
 }
 
@@ -52,7 +52,6 @@ body {
 	padding-bottom: 4rem;
 	padding-left: 5.5rem;
 	padding-right: 5.5rem;
-	margin: auto;
 }
 
 
