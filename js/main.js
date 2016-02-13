@@ -37,7 +37,7 @@ $(document).on('ready', function() {
 			}).done(function(data) {
 				//empties image area first
 				$('#images').empty();
-				$('<p class="lead">Showing Keyword Search <strong id="keyword" class="text-capitalize"></strong>').appendTo('#images');
+				$('<p class="lead">Showing Keyword Search | <strong id="keyword" class="text-capitalize"></strong>').appendTo('#images');
 				$('#keyword').text(tags);
 		 		// inserts this to create a newImages container each time masonry is called
 				$('<div id="newImages">').appendTo('#images');
