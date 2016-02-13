@@ -1,6 +1,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700);
+
 html { overflow-y: scroll; }
 
 .grey {
@@ -36,10 +39,12 @@ ul#images li button {
 
 body {
     padding-bottom: 25px;
+	font-family: 'Lato', sans-serif;
 }
 
 .jumbotron {
-	padding-bottom: 10rem;
+	padding-top: 10rem;
+	padding-bottom: 4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 	margin: auto;
@@ -47,7 +52,7 @@ body {
 
 
 .lead {
-	padding-top: 1rem;
+	padding-top: 2.5rem;
 	padding-bottom: 1rem;
 	padding-left: 1.5rem;
 }
