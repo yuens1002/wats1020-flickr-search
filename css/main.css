@@ -42,11 +42,16 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+#images {
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
 .jumbotron {
 	padding-top: 10rem;
 	padding-bottom: 4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
 	margin: auto;
 }
 
