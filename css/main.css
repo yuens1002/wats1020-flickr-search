@@ -43,15 +43,15 @@ body {
 }
 
 #images {
-	padding-left: 5rem;
-	padding-right: 5rem;
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
 }
 
 .jumbotron {
 	padding-top: 10rem;
 	padding-bottom: 4rem;
-	padding-left: 6rem;
-	padding-right: 6rem;
+	padding-left: 5.5rem;
+	padding-right: 5.5rem;
 	margin: auto;
 }
 
