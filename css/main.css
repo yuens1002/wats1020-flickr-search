@@ -5,7 +5,13 @@ html { overflow-y: scroll; }
 
 .grey {
 	background: #DDD;
-	padding: 1rem
+	padding: 1rem;
+}
+
+a img:hover {
+	opacity: .6;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
 }
 
 ul#images li {
@@ -33,9 +39,10 @@ body {
 }
 
 .jumbotron {
-	padding-left: 15rem;
-	padding-right: 15rem;
 	padding-bottom: 10rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	margin: auto;
 }
 
 

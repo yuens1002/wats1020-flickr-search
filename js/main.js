@@ -37,7 +37,7 @@ $(document).on('ready', function() {
 			}).done(function(data) {
 				//empties image area first
 				$('#images').empty();
-				$('<p class="lead">Showing Images of <strong id="keyword" class="text-capitalize"></strong>').appendTo('#images');
+				$('<p class="lead">Showing Keyword Search <strong id="keyword" class="text-capitalize"></strong>').appendTo('#images');
 				$('#keyword').text(tags);
 		 		// inserts this to create a newImages container each time masonry is called
 				$('<div id="newImages">').appendTo('#images');
@@ -47,7 +47,7 @@ $(document).on('ready', function() {
 					
 					var image = $('<img>').attr('src', item.media.m).addClass('img-responsive');
 					$('<a>').attr('href', item.link).html(image).appendTo(inner);
-					$('<p class="grey">').addClass('text-capitalize').html('<strong>' + item.title + '</strong>' + '<br>' + formatDate(item.date_taken) + '<br>' + formatAuthor(item.author)).appendTo(inner);
+					$('<p class="grey small hidden-xs">').addClass('text-capitalize').html('<strong>' + item.title + '</strong>' + '<br>' + formatDate(item.date_taken) + '<br>' + formatAuthor(item.author)).appendTo(inner);
 					outer.appendTo('#newImages').imagesLoaded().progress( function() {
 				 		$('#newImages').masonry();
 					});
@@ -71,7 +71,7 @@ $(document).on('ready', function() {
 	});
 	
 	//showing default search seattle when page loads
-	var searchword = 'Seattle';
+	var searchword = 'garryvelletri';
 	searchImages(searchword);
 
 });
