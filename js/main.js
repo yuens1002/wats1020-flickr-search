@@ -42,12 +42,12 @@ $(document).on('ready', function() {
 		 		// inserts this to create a newImages container each time masonry is called
 				$('<div id="newImages">').appendTo('#images');
 				$.each(data.items, function(i, item) {				
-					var outer = $('<div class="grid-item col-xs-4 col-sm-3 col-md-2">');
+					var outer = $('<div class="grid-item col-xs-6 col-sm-4 col-md-3">');
 					var inner = $('<div class="grid-item-content">').appendTo(outer);
 					
 					var image = $('<img>').attr('src', item.media.m).addClass('img-responsive');
 					$('<a>').attr('href', item.link).html(image).appendTo(inner);
-					$('<p class="grey small hidden-xs">').addClass('text-capitalize').html('<strong>' + item.title + '</strong>' + '<br>' + formatDate(item.date_taken) + '<br>' + formatAuthor(item.author)).appendTo(inner);
+					$('<p class="grey small">').addClass('text-capitalize').html('<strong>' + item.title + '</strong>' + '<br>' + formatDate(item.date_taken) + '<br>' + formatAuthor(item.author)).appendTo(inner);
 					outer.appendTo('#newImages').imagesLoaded().progress( function() {
 				 		$('#newImages').masonry();
 					});
