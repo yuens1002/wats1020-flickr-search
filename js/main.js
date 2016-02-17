@@ -23,6 +23,11 @@ $(document).on('ready', function() {
     	var last = string.search(/\)/);
     	return string.slice(frist+1, last);
 	}
+	
+	
+	
+	
+	
 
 	// processes/sends user search terms for a flickr api response 
 	var searchImages = function(tags) {
@@ -43,9 +48,14 @@ $(document).on('ready', function() {
 				$('<div id="newImages">').appendTo('#images');
 				$.each(data.items, function(i, item) {				
 					var outer = $('<div class="grid-item col-xs-6 col-sm-4 col-md-3">');
-					var inner = $('<div class="grid-item-content">').appendTo(outer);
+					var inner = $('<div class="grid-item- content">').appendTo(outer);
 					
-					var image = $('<img>').attr('src', item.media.m).addClass('img-responsive');
+					//converts the src of the _m to _b to retrive the 
+					// larger image instead of the small 
+					var bigImage = (item.media.m).replace(/_m/, '_b');
+
+					
+					var image = $('<img>').attr('src', bigImage).addClass('img-responsive');
 					$('<a>').attr('href', item.link).html(image).appendTo(inner);
 					$('<p class="grey small">').addClass('text-capitalize').html('<strong>' + item.title + '</strong>' + '<br>' + formatDate(item.date_taken) + '<br>' + formatAuthor(item.author)).appendTo(inner);
 					outer.appendTo('#newImages').imagesLoaded().progress( function() {
