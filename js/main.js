@@ -47,7 +47,7 @@ $(document).on('ready', function() {
 		 		// inserts this to create a newImages container each time masonry is called
 				$('<div id="newImages">').appendTo('#images');
 				$.each(data.items, function(i, item) {				
-					var outer = $('<div class="grid-item col-xs-6 col-sm-4 col-md-3">');
+					var outer = $('<div class="grid-item col-xs-12 col-sm-4 col-md-3">');
 					var inner = $('<div class="grid-item- content">').appendTo(outer);
 					
 					//converts the src of the _m to _b to retrive the 
