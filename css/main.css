@@ -9,6 +9,7 @@ html { overflow-y: scroll; }
 .grey {
 	background: #eee;
 	padding: 1rem;
+	word-wrap: break-word;
 }
 
 a img:hover {
